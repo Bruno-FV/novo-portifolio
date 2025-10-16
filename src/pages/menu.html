@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="/src/css/menu.css" />
+  <title>menu</title>
+</head>
+
+<body>
+  <main>
+    <div id="menu" class="container-fluid">
+      <div class="row">
+        <!--seção menu-->
+        <div id="icon-menu">
+          <img src="/src/img/icon-menu.png" alt="icone para acesso do menu">
+        </div>
+
+        <div id="coluna1-menu" class="col-3">
+          <ul>
+            <li id="linkSobreMim" data-target="sobreMim" class="button">Sobre Mim</li>
+            <li id="linkpRealizado" data-target="pRealizado" class="button">Projetos Realizados</li>
+            <li id="linkskill" data-target="skill" class="button">Skills</li>
+          </ul>
+        </div>
+
+        <div id="coluna2-menu" class="col-9 mx-auto">
+          <!--********************************** sobre mim ********************************************-->
+
+          <div id="sobreMim">
+            <h1 class="text-center">Sobre Mim</h1>
+            <hr />
+            <p class="lh-base m-1">
+              Sou formado em Engenharia de Software e apaixonado por
+              tecnologia e inovação. Minha formação me permitiu desenvolver
+              habilidades sólidas em análise e desenvolvimento de sistemas
+              robustos, além de uma forte base em princípios de engenharia que
+              garantem qualidade, escalabilidade e manutenção dos projetos.
+              Tenho experiência prática com algumas linguagens de programação,
+              frameworks e metodologias ágeis, como Scrum e Kanban, o que me
+              permite colaborar de forma eficiente em equipes
+              multidisciplinares e entregar soluções que atendem às
+              necessidades dos usuários e do negócio. No meu portfólio, você
+              encontrará projetos que demonstram minhas competências em:
+            </p>
+            <ul>
+              <li>
+                Desenvolvimento de aplicações web e desktop utilizando
+                tecnologias como Spring Boot, Electron.
+              </li>
+              <li>Integração de sistemas com APIs REST.</li>
+              <li>
+                Gestão de dados em bancos de dados relacionais (PostgreSQL,
+                SQL Server).
+              </li>
+            </ul>
+            <p class="lh-base">
+              Busco constantemente aprimorar minhas habilidades e aprender
+              novas tecnologias para entregar soluções inovadoras e
+              impactantes.
+            </p>
+            <div id="botoes" class="d-flex justify-content-evenly mt-5">
+              <span id="contato" class="btn">Contato <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                  fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                  <path
+                    d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
+                </svg></span>
+              <!-- Modal do QR Code -->
+              <div id="modalQrContato" class="modal hidden">
+                <div class="modal-content">
+                  <span class="close-btn">&times;</span>
+                  <img src="/src/img/meu_contato.jpeg" alt="Contato QR Code" class="qr-img">
+                </div>
+              </div>
+
+              <a id="curriculo" href="/src/documentos/Bruno-Ferreira-Vieira.pdf" target="_blank" class="btn">Visualizar
+                Curriculo</a>
+            </div>
+          </div>
+
+          <!--meus projetos-->
+
+          <div id="pRealizado">
+            <h1>Projetos Realizados</h1>
+            <hr />
+            <div id="slides" class="carousel slide">
+              <div class="carousel-indicators">
+                <button id="indicadores" type="button" data-bs-target="#slides" data-bs-slide-to="0" class="active"
+                  aria-current="true" aria-label="Slide 1"></button>
+                <button id="indicadores" type="button" data-bs-target="#slides" data-bs-slide-to="1"
+                  aria-label="Slide 2"></button>
+                <button id="indicadores" type="button" data-bs-target="#slides" data-bs-slide-to="2"
+                  aria-label="Slide 3"></button>
+                <button id="indicadores" type="button" data-bs-target="#slides" data-bs-slide-to="3"
+                  aria-label="Slide 4"></button>
+              </div>
+              <div id="carrossel" class="carousel-inner">
+                <div class="carousel-item active" style="--i: 0">
+                  <img id="imgCarrosel" src="/src/img/imgSlide1.png" class="d-block w-100" alt="..." />
+                  <div id="texto-indicadores" class="carousel-caption">
+                    <h5>Trabalho de TCC</h5>
+                    <p id="tccLink">acesse aqui a descrição do trabalho</p>
+                  </div>
+                </div>
+                <div class="carousel-item" style="--i: 1">
+                  <video class="d-block w-100" autoplay loop muted aria-label="Vídeo do projeto criado">
+                    <source id="videos" src="/src/videos/seguranca-vip.mp4" type="video/mp4" />
+                  </video>
+                  <div id="texto-indicadores" class="carousel-caption">
+                    <h5>Aplicação Desktop da Segurança Vip</h5>
+                    <p id="appDesktopLink">acesse aqui a descrição do trabalho</p>
+                  </div>
+                </div>
+                <div class="carousel-item" style="--i: 2">
+                  <video class="d-block w-100" autoplay loop muted aria-label="Vídeo do projeto criado">
+                    <source id="videos" src="/src/videos/seguranca-vip-site.mp4" type="video/mp4" />
+                  </video>
+                  <div id="texto-indicadores" class="carousel-caption">
+                    <h5>Site Segurança Vip</h5>
+                    <p id="siteSegurancaLink">acesse aqui a descrição do trabalho</p>
+                  </div>
+                </div>
+                <div class="carousel-item" style="--i: 3">
+                  <video class="d-block w-100" autoplay loop muted aria-label="Vídeo do projeto criado">
+                    <source id="videos" src="/src/videos/to-conecta.mp4" type="video/mp4" />
+                  </video>
+                  <div id="texto-indicadores" class="carousel-caption">
+                    <h5>Site To Conecta</h5>
+                    <p id="siteToConectaLink">acesse aqui a descrição do trabalho</p>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#slides" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#slides" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+          <section>
+            <div id="descModalTcc" class="modalTcc hiddenTcc">
+              <div class="m-3 modal-content-projetos">
+                <span class="closeTcc-btn">&times;</span>
+                <h1 class="mb-3">💼 Projeto de Conclusão de Curso — Sistema Web para Clínica Laboratório Vida</h1>
+                <p><strong>Duração:</strong> 6 meses | <strong>Tecnologias:</strong> Spring Boot · Java · PostgreSQL ·
+                  HTML/CSS · JavaScript · Bootstrap</p>
+                <p><strong>Metodologia:</strong> Scrum</p>
+                <p><strong>Repositório:</strong> <a href="https://github.com/Bruno-FV/TCC"
+                    target="_blank">github.com/Bruno-FV/TCC</a></p>
+                <h2 class="mb-3">✅ Visão Geral</h2>
+                <p>O projeto <strong>Laboratório Vida</strong> é uma aplicação web desenvolvida para uma clínica de
+                  análises clínicas que buscava modernizar seus processos operacionais e expandir sua presença digital.
+                  A proposta foi planejada, desenvolvida e entregue como parte do Trabalho de Conclusão de Curso em
+                  Engenharia de Software, com escopo real e aplicabilidade imediata.</p>
+                <p>Com foco na experiência do usuário e nos fluxos administrativos internos, a aplicação oferece um
+                  sistema completo de cadastro, login seguro, agendamento online, relatórios administrativos e painel de
+                  gestão, promovendo mobilidade, acessibilidade e escalabilidade para o negócio.</p>
+                <h2 class="mb-3">🧩 Problema Real Resolvido</h2>
+                <p>Antes da aplicação, o Laboratório Vida utilizava processos manuais para agendamento e atendimento ao
+                  cliente, dificultando o gerenciamento de dados e o crescimento do negócio. Além disso, não havia
+                  presença digital relevante, o que limitava o alcance do público-alvo.</p>
+                <h2 class="mb-3">🎯 Solução Proposta</h2>
+                <ul>
+                  <li>Consulta de serviços e informações da clínica;</li>
+                  <li>Cadastro e login com segurança (criptografia de senhas);</li>
+                  <li>Agendamento de consultas e exames online;</li>
+                  <li>Histórico de solicitações por cliente;</li>
+                  <li>Painel administrativo para gestão de agendamentos e serviços;</li>
+                  <li>Geração de relatórios financeiros diários e mensais.</li>
+                </ul>
+                <h2 class="mb-3">🔧 Tecnologias e Arquitetura</h2>
+                <h3>Back-end:</h3>
+                <ul>
+                  <li>Java + Spring Boot (REST API com arquitetura MVC);</li>
+                  <li>Separação em camadas: Controllers, Services, Repositories, Models.</li>
+                </ul>
+
+                <h3>Front-end:</h3>
+                <ul>
+                  <li>HTML5, CSS3, JavaScript e Bootstrap;</li>
+                  <li>Interface responsiva e compatível com múltiplos navegadores.</li>
+                </ul>
+
+                <h3>Banco de Dados:</h3>
+                <ul>
+                  <li>PostgreSQL com JPA (Spring Data);</li>
+                </ul>
+
+                <h3>Segurança:</h3>
+                <ul>
+                  <li>Criptografia de senhas no cadastro/login;</li>
+                  <li>Validação de dados no back-end;</li>
+                  <li>Preparado para autenticação com JWT.</li>
+                </ul>
+                <h2>🧪 Metodologia</h2>
+                <p>Utilização da metodologia ágil <strong>Scrum</strong>, com divisão em sprints, priorização de backlog
+                  e entrega incremental. Reuniões de revisão foram realizadas para validação de requisitos com o cliente
+                  real.</p>
+                <h2>💡 Diferenciais Técnicos</h2>
+                <ul>
+                  <li>Código modular com arquitetura em camadas (MVC);</li>
+                  <li>Repositório público documentado;</li>
+                  <li>Pronto para integração com sistemas de pagamento e geolocalização;</li>
+                  <li>Design responsivo, acessível e com boas práticas de UX/UI;</li>
+                  <li>Preparado para CI/CD e deploy em ambiente cloud.</li>
+                </ul>
+                <h2>📌 Conclusão</h2>
+                <p>Este projeto demonstra domínio prático de tecnologias modernas, aplicação de metodologia ágil e
+                  capacidade de entregar soluções robustas para problemas reais. Todos os requisitos foram atendidos,
+                  com base em necessidades de negócio, e a aplicação está preparada para evoluções futuras.</p>
+              </div>
+            </div>
+          </section>
+          <section>
+            <div id="descModalAppDesktop" class="modalAppDesktop hiddenAppDesktop">
+              <div class="m-3 modal-content-projetos">
+                <span class="closeAppDesktop-btn">&times;</span>
+                <h1 class="mb-3">💼 Aplicação Desktop — Sistema de Gestão</h1>
+                <p><strong>Duração:</strong> 6 meses | <strong>Tecnologias:</strong> Electron · JavaScript · HTML/CSS ·
+                  Node.js · Java · Spring Boot </p>
+                <h2> ✅Visão Geral</h2>
+                <p>
+                  A aplicação foi desenvolvida com o objetivo de modernizar e otimizar o processo de gerenciamento de
+                  cadastros da empresa <strong>Segurança Vip</strong>.
+                  Antes da implantação do sistema, todos os cadastros eram realizados de forma manual — utilizando
+                  planilhas para inserção, remoção, atualização e até mesmo
+                  para identificar clientes inadimplentes. Esse processo era lento, sujeito a erros e dificultava o
+                  controle administrativo.
+                </p>
+
+                <p>
+                  Para resolver esse problema, foi criada uma <strong>aplicação desktop</strong> que unifica e
+                  automatiza todas as etapas do gerenciamento de clientes.
+                  A ideia inicial era apenas desenvolver uma página online para cadastro de novos clientes, onde um
+                  colaborador pudesse acessar e registrar as informações
+                  de maneira simples. Esses dados eram então enviados para uma <strong>API REST</strong> (desenvolvida
+                  em <strong>Java com Spring Boot</strong> e hospedada no <strong>Heroku</strong>),
+                  que os armazenava em um banco de dados na nuvem (<strong>CockroachDB Cloud</strong>).
+                </p>
+
+                <p>
+                  Com o avanço do projeto, surgiu a necessidade de criar uma <strong>aplicação desktop</strong> que se
+                  comunicasse com essa API remota.
+                  Essa aplicação local utiliza uma segunda <strong>API REST (Spring Boot)</strong>, responsável por
+                  receber os novos cadastros e exibi-los
+                  em uma tela de <em>pré-cadastros</em>. Nessa etapa, o administrador pode validar as informações e
+                  decidir se o cadastro será salvo na base local ou removido.
+                </p>
+
+                <p>
+                  Além do módulo de cadastro, a aplicação também oferece diversas outras funcionalidades, como o
+                  <strong>gerenciamento de despesas</strong>,
+                  cadastro de colaboradores, controle de <strong>clientes inadimplentes</strong>, e operações completas
+                  de inserção, atualização e exclusão de registros.
+                  O sistema permite ainda <strong>listar clientes por cidade e bairro</strong> e gerar relatórios
+                  detalhados com o <strong>faturamento total</strong>
+                  por região. Os filtros e formas de visualização foram desenvolvidos de acordo com as preferências do
+                  cliente, garantindo flexibilidade e praticidade no uso.
+                </p>
+
+                <p class="highlight">
+                  Em resumo, o projeto transformou um processo totalmente manual em um sistema automatizado, seguro e
+                  integrado, proporcionando mais agilidade,
+                  precisão e controle para a equipe administrativa da <strong>Segurança Vip</strong>.
+                </p>
+
+                <h2 class="mb-3">🧩 Arquitetura do Projeto</h2>
+                <p>O projeto segue uma arquitetura distribuída, moderna e robusta:</p>
+                <table class="table table-dark mb-3">
+                  <tr>
+                    <th>Camada</th>
+                    <th>Tecnologia</th>
+                    <th>Responsabilidade</th>
+                  </tr>
+                  <tr>
+                    <td>Interface Desktop</td>
+                    <td>Electron.js, HTML, CSS, JS</td>
+                    <td>Interface gráfica moderna e interativa</td>
+                  </tr>
+                  <tr>
+                    <td>Backend Local</td>
+                    <td>Spring Boot</td>
+                    <td>CRUD local, persistência e comunicação com API remota</td>
+                  </tr>
+                  <tr>
+                    <td>Backend Remoto</td>
+                    <td>Spring Boot + JWT</td>
+                    <td>Autenticação e segurança</td>
+                  </tr>
+                  <tr>
+                    <td>Banco de Dados</td>
+                    <td>PostgreSQL</td>
+                    <td>Armazenamento dos dados</td>
+                  </tr>
+                </table>
+                <h2 class="mb-3">🛠️ Tecnologias e Ferramentas</h2>
+                <ul>
+                  <li><strong>Frontend Desktop:</strong> Electron.js, Bootstrap 5, JavaScript</li>
+                  <li><strong>Backend:</strong> Java 17, Spring Boot 3.3, Spring Security, JWT, JPA</li>
+                  <li><strong>Banco de Dados:</strong> PostgreSQL</li>
+                  <li><strong>DevOps:</strong> Heroku para API na nuvem, JAR embarcado local</li>
+                  <li><strong>Processos:</strong> Encerramento da porta 8082 via PowerShell</li>
+                  <li><strong>Notificações:</strong> Nativas do SO</li>
+                </ul>
+                <h2 class="mb-3">⚙️ Funcionalidades Desenvolvidas</h2>
+                <ul>
+                  <li>Cadastro completo (residencial/comercial)</li>
+                  <li>Filtro por cidade/bairro</li>
+                  <li>Detalhamento de despesas</li>
+                  <li>Listagem, edição e envio de pré-cadastros</li>
+                  <li>Faturamento total e por bairro</li>
+                  <li>Tabelas dinâmicas com busca em tempo real</li>
+                  <li>Mascaramento e validação de campos</li>
+                  <li>Interface modular com abas e restore automático</li>
+                </ul>
+                <h2>🧠 Metodologias e Paradigmas</h2>
+                <ul>
+                  <li><strong>POO:</strong> controllers, services, DTOs bem organizados</li>
+                  <li><strong>Engenharia de Software Moderna:</strong> SRP (Princípio da Responsabilidade Única),
+                    modularização, normalização</li>
+                  <li><strong>Boas Práticas de UI/UX:</strong> feedback visual e comportamento responsivo</li>
+                  <li><strong>RESTful Design:</strong> rotas organizadas e verbos corretos</li>
+                  <li><strong>Foco em performance e usabilidade</strong></li>
+                </ul>
+
+                <h2>⭐ Destaques Técnicos</h2>
+                <ul>
+                  <li>✅ Integração Electron ⇄ Spring Boot</li>
+                  <li>✅ Encerramento automatizado de processos críticos</li>
+                  <li>✅ Operação offline com sincronização</li>
+                  <li>✅ Backend com autenticação JWT</li>
+                  <li>✅ Código frontend puro, sem frameworks pesados</li>
+                  <li>✅ Separação limpa por domínios (financeiro, residencial, etc.)</li>
+                </ul>
+              </div>
+            </div>
+
+          </section>
+          <section>
+            <div id="descModalSiteSeguranca" class="modalSiteSeguranca hiddenSiteSeguranca">
+              <div class="m-3 modal-content-projetos">
+                <span class="closeSiteSeguranca-btn">&times;</span>
+                <h1 class="mb-3">💼 Site Segurança Vip</h1>
+                <p><strong>Duração:</strong> 1 dia | <strong>Tecnologias:</strong> HTML5 · CSS3 · JavaScript · Bootstrap
+                  5
+                </p>
+                <p><strong>Endereço:</strong> <a href="https://segurancavipcoelhoneto.com.br/" target="_blank"
+                    style="text-decoration: none; ">Site Seguranca Vip</a></p>
+
+                <h2>💡 Visão Geral</h2>
+                <p>
+                  Esse projeto foi desenvolvido para a empresa <strong>Segurança Vip</strong> com o objetivo de
+                  modernizar o processo de divulgação dos serviços e facilitar o contato com os clientes.
+                  A ideia era criar um site institucional completo, com design moderno e responsivo, que mostrasse os
+                  principais serviços e ainda permitisse o cliente fazer um <strong>pré-cadastro online</strong>.
+                  Antes, o contato era feito apenas por telefone ou presencialmente, e agora tudo pode ser feito direto
+                  pelo site, de forma prática e automatizada.
+                </p>
+
+                <p>
+                  O cliente acessa o site, preenche o formulário de pré-cadastro com suas informações e escolhe o tipo
+                  de plano desejado (residencial ou comercial).
+                  Depois disso, o sistema gera automaticamente uma <strong>mensagem personalizada</strong> e envia para
+                  o <strong>WhatsApp da empresa</strong>, facilitando o atendimento e eliminando a necessidade de
+                  digitar manualmente as informações.
+                  Além disso, o site também cria um <strong>QRCode dinâmico</strong> que o cliente pode escanear para
+                  iniciar a conversa direto no celular, tornando o processo rápido e intuitivo.
+                </p>
+
+                <h2>⚙️ Tecnologias Utilizadas</h2>
+                <ul>
+                  <li><strong>HTML5 e CSS3:</strong> base da estrutura e estilização de todas as páginas.</li>
+                  <li><strong>Bootstrap 5:</strong> usado para deixar o layout responsivo e adaptado para diferentes
+                    telas.</li>
+                  <li><strong>JavaScript puro:</strong> responsável por gerar o QRCode, validar o formulário e integrar
+                    com o WhatsApp.</li>
+                  <li><strong>QRCode.js:</strong> biblioteca para geração dinâmica de códigos QR.</li>
+                  <li><strong>AOS.js:</strong> usado para as animações de rolagem e transições suaves entre as seções.
+                  </li>
+                </ul>
+
+                <h2>🧩 Estrutura e Funcionalidades</h2>
+                <ul>
+                  <li>Site dividido em seções: Home, Serviços, Quem Somos e Contato.</li>
+                  <li>Formulário de pré-cadastro com validação automática e escolha de plano.</li>
+                  <li>Geração automática de link e mensagem para WhatsApp.</li>
+                  <li>Criação de QRCode personalizado com os dados do cliente.</li>
+                  <li>Animações leves e efeitos visuais com AOS.js.</li>
+                  <li>Totalmente responsivo, funcionando bem em celulares, tablets e computadores.</li>
+                </ul>
+
+                <h2>🧠 Detalhes Técnicos</h2>
+                <p>
+                  O código foi todo escrito de forma limpa e organizada, separando bem cada função JavaScript conforme
+                  sua responsabilidade.
+                  O projeto segue o princípio de responsabilidade única (SRP), ou seja, cada função tem uma tarefa
+                  específica, como gerar o QRCode, fechar o QRCode ou validar o formulário.
+                  Além disso, o formulário foi construído com as validações nativas do Bootstrap, garantindo que o
+                  usuário insira todos os dados antes de enviar.
+                </p>
+
+                <h2>🌟 Destaques do Projeto</h2>
+                <ul>
+                  <li>Integração direta com WhatsApp, sem precisar de back-end.</li>
+                  <li>Geração dinâmica de QRCode para facilitar o contato.</li>
+                  <li>Design moderno, responsivo e com boa experiência para o usuário.</li>
+                  <li>Código simples, leve e fácil de manter.</li>
+                  <li>SEO configurado com meta tags e descrições otimizadas.</li>
+                </ul>
+
+              </div>
+
+          </section>
+          <section>
+            <div id="descModalSiteToConecta" class="modalSiteToConecta hiddenSiteToConecta">
+              <div class="m-3 modal-content-projetos">
+                <span class="closeSiteToConecta-btn">&times;</span>
+                <h2>💡 Visão Geral</h2>
+                <p>
+                  O projeto <strong>TO Conecta</strong> foi desenvolvido para apoiar profissionais e estudantes de
+                  <strong>Terapia Ocupacional</strong> a se conectarem com conteúdos de estudo, aulas ao vivo e
+                  supervisões personalizadas.
+                  A ideia nasceu da necessidade de criar uma plataforma simples e funcional, que unisse tecnologia e
+                  educação em um mesmo ambiente, facilitando o acesso a informações e o contato direto com a equipe de
+                  suporte.
+                </p>
+
+                <h2>⚙️ Tecnologias Utilizadas</h2>
+                <ul>
+                  <li><strong>Frontend:</strong> HTML5, CSS3, JavaScript e Bootstrap 5, garantindo um layout moderno,
+                    responsivo e otimizado para diferentes dispositivos.</li>
+                  <li><strong>Bibliotecas:</strong> AOS (Animate On Scroll) para animações sutis que melhoram a
+                    experiência visual do usuário.</li>
+                  <li><strong>Backend:</strong> Node.js com Express e integração com a API do <strong>WhatsApp Web
+                      JS</strong> para comunicação direta entre o visitante e o suporte via mensagens automáticas.</li>
+                  <li><strong>Deploy:</strong> A aplicação backend foi hospedada no <strong>Render</strong>, tornando o
+                    serviço acessível online e pronto para receber solicitações do formulário.</li>
+                </ul>
+
+                <h2>🧠 Funcionamento</h2>
+                <p>
+                  O site apresenta informações institucionais e educacionais, além de uma área interativa com
+                  formulários integrados a um <strong>bot do WhatsApp</strong>.
+                  Ao preencher o formulário com nome, e-mail, telefone e dúvida, o sistema envia automaticamente as
+                  informações para o atendente e responde ao usuário com uma mensagem de confirmação personalizada.
+                </p>
+                <p>
+                  A fila de mensagens é controlada com delay para evitar bloqueios e garantir estabilidade no envio,
+                  demonstrando boas práticas de arquitetura assíncrona e uso de filas de processamento.
+                </p>
+
+                <h2>🏗️ Arquitetura</h2>
+                <p>
+                  O projeto segue uma <strong>arquitetura cliente-servidor</strong>, onde:
+                </p>
+                <ul>
+                  <li>O <strong>cliente (frontend)</strong> coleta e valida os dados do usuário com validações
+                    personalizadas em JavaScript e Bootstrap;</li>
+                  <li>O <strong>servidor (backend)</strong> recebe os dados via requisição HTTP e utiliza o
+                    <strong>WhatsApp Web JS</strong> para enviar as mensagens.
+                  </li>
+                </ul>
+                <p>
+                  Essa separação garante escalabilidade, manutenção simples e a possibilidade de evoluir o projeto para
+                  novas integrações, como banco de dados ou painel administrativo.
+                </p>
+
+                <h2>🚀 Destaques do Projeto</h2>
+                <ul>
+                  <li>Integração direta entre site e WhatsApp com envio automático de mensagens.</li>
+                  <li>Design intuitivo e animações fluidas que tornam a navegação agradável.</li>
+                  <li>Backend seguro com controle de fila e verificação de números válidos no WhatsApp.</li>
+                  <li>Foco na experiência do usuário e em soluções práticas para o dia a dia profissional.</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+          <!--********************************** skills ********************************************-->
+          <section>
+            <div id="skill" class="mt-2 mb-3">
+
+              <h1 class="text-center">Skills</h1>
+              <hr />
+              <h2>🧠 Habilidades Técnicas e Conhecimentos</h2>
+
+              <h3>💻 Desenvolvimento Backend</h3>
+              <ul>
+                <li><strong>Java (Spring Boot):</strong> criação de APIs REST seguras com autenticação JWT, JPA e
+                  integração com PostgreSQL.</li>
+                <li><strong>Node.js (Express.js):</strong> desenvolvimento de servidores leves e performáticos com
+                  integração a serviços externos e automação de mensagens via WhatsApp Web JS.</li>
+                <li>Domínio de <strong>arquitetura cliente-servidor</strong> e <strong>microserviços</strong>,
+                  aplicando modularização e boas práticas de responsabilidade única (SRP).</li>
+                <li>Implementação de <strong>filas assíncronas</strong> para controle e distribuição de tarefas.
+                </li>
+              </ul>
+
+              <h3>🖥️ Desenvolvimento Desktop</h3>
+              <ul>
+                <li><strong>Electron.js:</strong> desenvolvimento de aplicações desktop integradas com APIs locais e
+                  na nuvem.</li>
+                <li>Comunicação entre camadas da aplicação (<em>Electron ↔ API Local ↔ API Nuvem</em>), garantindo
+                  sincronização de dados e desempenho.</li>
+                <li>Automação de processos e criação de instaladores personalizados para distribuição da aplicação.
+                </li>
+              </ul>
+
+              <h3>🌐 Desenvolvimento Frontend</h3>
+              <ul>
+                <li><strong>HTML5, CSS3 e JavaScript (ES6+)</strong> aplicados em interfaces modernas e responsivas.
+                </li>
+                <li><strong>Bootstrap 5:</strong> criação de layouts adaptáveis e dinâmicos.</li>
+                <li><strong>AOS.js:</strong> uso de animações sutis para melhor experiência do usuário.</li>
+                <li>Validação personalizada de formulários e manipulação dinâmica do DOM com foco em usabilidade.
+                </li>
+              </ul>
+
+              <h3>⚙️ Engenharia de Software e Boas Práticas</h3>
+              <ul>
+                <li>Aplicação de princípios <strong>SOLID</strong>, com destaque para <strong>SRP (Single
+                    Responsibility Principle)</strong> e modularização.</li>
+                <li>Separação clara entre camadas de <strong>Controller, Service e Repository</strong>.</li>
+                <li>Versionamento com <strong>Git e GitHub</strong>, uso de branches e resolução de conflitos.</li>
+                <li>Documentação técnica e descritiva dos projetos para manutenção e evolução contínua.</li>
+                <li>Deploy em plataformas como <strong>Heroku</strong> e <strong>Render</strong> com pipelines
+                  configurados.</li>
+              </ul>
+
+              <h3>🗄️ Banco de Dados</h3>
+              <ul>
+                <li><strong>PostgreSQL e CockroachDB (Cloud):</strong> modelagem, normalização e integração via
+                  JPA/Hibernate.</li>
+                <li>Sincronização entre bancos locais e remotos, garantindo consistência e performance.</li>
+              </ul>
+
+              <h3>🔗 Integrações e Automação</h3>
+              <ul>
+                <li><strong>WhatsApp Web JS:</strong> criação de bots e automação de mensagens para atendimento ao
+                  cliente.</li>
+                <li><strong>APIs RESTful:</strong> criação e consumo de endpoints entre aplicações distribuídas.
+                </li>
+                <li>Geração de <strong>QR Codes</strong> e integração direta com sistemas de comunicação.</li>
+              </ul>
+
+              <h3>☁️ Infraestrutura e Deploy</h3>
+              <ul>
+                <li><strong>Heroku, Render e Railway:</strong> deploy de APIs, bots e aplicações.</li>
+                <li><strong>Docker (básico/intermediário):</strong> containerização de ambientes e otimização de
+                  builds.</li>
+                <li>Monitoramento e gerenciamento de logs em produção.</li>
+              </ul>
+
+              <h3>💬 Soft Skills</h3>
+              <ul>
+                <li>Pensamento analítico e foco em automação e otimização de processos.</li>
+                <li>Capacidade de estruturar projetos do zero com visão de escalabilidade e manutenção.</li>
+                <li>Comunicação técnica clara e documentação didática.</li>
+                <li>Adaptabilidade entre linguagens e frameworks com facilidade de aprendizado.</li>
+              </ul>
+            </div>
+          </section>
+
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="/src/script/scriptMenu.js"></script>
+</body>
+
+</html>

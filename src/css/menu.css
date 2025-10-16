@@ -1,0 +1,523 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+hr {
+  background-color: #760504;
+  height: 4px;
+  opacity: 1;
+  border: none;
+}
+
+#icon-menu img {
+  display: none;
+}
+
+#coluna1-menu {
+  border-right: 4px solid #760504;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+#coluna1-menu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 1rem;
+}
+
+#coluna1-menu li {
+  border: 2px solid #760504;
+  border-radius: 10px;
+  margin-bottom: 4rem;
+  display: flex;
+  justify-content: center;
+  width: 12vw;
+  height: auto;
+  padding: 10px;
+
+}
+
+#linkskill,
+#linkpRealizado,
+#linkSobreMim {
+  cursor: pointer;
+}
+
+#coluna1-menu li:hover {
+  background-color: #760504;
+  color: #212121;
+  font-weight: bold;
+}
+
+#menu {
+  background-color: #212121;
+  color: white;
+  height: auto;
+
+}
+
+#coluna2-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow-y: auto;
+  height: 100vh;
+  padding: 2rem;
+  margin-bottom: 1rem;
+
+  & #contato svg {
+    margin-left: 1rem;
+  }
+
+  & #qrContato {
+    border-radius: 1rem;
+  }
+
+  & #sobreMim,
+  #pRealizado,
+  #skill {
+    display: none;
+  }
+
+}
+
+#sobreMim {
+  text-align: justify;
+  width: 55vw;
+}
+
+/*############################################### CSS modal contato #######################################################*/
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal.hidden {
+  display: none;
+}
+
+.modal-content {
+  position: relative;
+  background-color: transparent;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.qr-img {
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 0 10px #fff;
+}
+
+.close-btn {
+  position: absolute;
+  top: -15px;
+  right: 41%;
+  font-size: 30px;
+  font-weight: bold;
+  color: #760504;
+  cursor: pointer;
+  background: white;
+  border-radius: 50%;
+  padding: 10px 22px;
+}
+
+#botoes .btn {
+  background-color: inherit;
+  border: 2px solid #760504;
+  border-radius: 10px;
+  width: 12vw;
+  color: white;
+  padding: 10px;
+}
+
+#botoes .btn:hover {
+  background-color: #760504;
+  color: #212121;
+  font-weight: bold;
+}
+
+/*############################################### CSS PÁGINA PROJETO #######################################################*/
+
+#carrossel {
+  width: 70vw !important;
+  height: auto;
+}
+
+#imgCarrosel {
+  border-radius: 20px;
+  aspect-ratio: 3/1;
+  object-fit: cover;
+  width: 70vw !important;
+  height: 80vh;
+}
+
+#indicadores {
+  background-color: #760504;
+  width: 4vw;
+  padding: 2px;
+  border-radius: 10.2px;
+}
+
+#texto-indicadores {
+  color: #760504;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+#descAppDesktop,
+#descSiteSeguraca,
+#descSiteToConecta {
+  display: none;
+}
+
+/*############################################### CSS PÁGINA DESCRIÇÃO #######################################################*/
+.modalTcc.hiddenTcc {
+  display: none;
+}
+
+#tccLink {
+  cursor: pointer;
+}
+
+.modalTcc {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  overflow-y: auto;
+  padding: 40px 0;
+  z-index: 1000;
+}
+
+.modal-content-projetos {
+  position: relative;
+  border: #fff 2px solid;
+  width: 60vw;
+  max-width: 900px;
+  max-height: none;
+  overflow-y: visible;
+  padding: 20px;
+  border-radius: 8px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.closeTcc-btn {
+  position: absolute;
+  top: -45px;
+  right: -3rem;
+  font-size: 30px;
+  font-weight: bold;
+  color: #760504;
+  cursor: pointer;
+  background: white;
+  border-radius: 50%;
+  padding: 10px 22px;
+  z-index: 1100;
+}
+
+/*############################################### CSS DESCRIÇÃO APP DESKTOP #######################################################*/
+.modalAppDesktop.hiddenAppDesktop {
+  display: none;
+}
+
+#appDesktopLink {
+  cursor: pointer;
+}
+
+.modalAppDesktop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  overflow-y: auto;
+  padding: 40px 0;
+  z-index: 1000;
+}
+
+.closeAppDesktop-btn {
+  position: absolute;
+  top: -45px;
+  right: -3rem;
+  font-size: 30px;
+  font-weight: bold;
+  color: #760504;
+  cursor: pointer;
+  background: white;
+  border-radius: 50%;
+  padding: 10px 22px;
+  z-index: 1100;
+}
+
+/*############################################### CSS DESCRIÇÃO SITE SEGURANÇA VIP #######################################################*/
+.modalSiteSeguranca.hiddenSiteSeguranca {
+  display: none;
+}
+
+#siteSegurancaLink {
+  cursor: pointer;
+}
+
+.modalSiteSeguranca {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  overflow-y: auto;
+  padding: 40px 0;
+  z-index: 1000;
+}
+
+.closeSiteSeguranca-btn {
+  position: absolute;
+  top: -45px;
+  right: -3rem;
+  font-size: 30px;
+  font-weight: bold;
+  color: #760504;
+  cursor: pointer;
+  background: white;
+  border-radius: 50%;
+  padding: 10px 22px;
+  z-index: 1100;
+}
+
+/*############################################### CSS DESCRIÇÃO SITE TO CONECTA #######################################################*/
+.modalSiteToConecta.hiddenSiteToConecta {
+  display: none;
+}
+
+#siteToConectaLink {
+  cursor: pointer;
+}
+
+.modalSiteToConecta {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  overflow-y: auto;
+  padding: 40px 0;
+  z-index: 1000;
+}
+
+.closeSiteToConecta-btn {
+  position: absolute;
+  top: -45px;
+  right: -3rem;
+  font-size: 30px;
+  font-weight: bold;
+  color: #760504;
+  cursor: pointer;
+  background: white;
+  border-radius: 50%;
+  padding: 10px 22px;
+  z-index: 1100;
+}
+
+/*############################################### CSS PÁGINA SKILLS #######################################################*/
+#skill {
+  height: 100vh;
+}
+
+/*############################################### CSS RESPOSIVIDADE #######################################################*/
+@media (max-width: 768px) {
+  #coluna1-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    transform: translateX(-100%);
+    transition: transform 0.5s ease-in-out;
+    background-color: #760504;
+    color: white;
+    z-index: 1500;
+  }
+
+  #coluna1-menu li {
+    border: 2px solid white;
+    background-color: #212121;
+    border-radius: 10px;
+    margin-bottom: 4rem;
+    display: flex;
+    justify-content: center;
+    width: 20vw;
+    height: auto;
+    padding: 10px;
+
+  }
+
+  #coluna1-menu.show {
+    transform: translateX(0);
+  }
+
+  #coluna2-menu {
+    margin: 0 !important;
+    width: 100%;
+  }
+
+  #sobreMim {
+    display: block;
+    width: 100%;
+
+    & #contato,
+    #curriculo {
+      width: 15rem;
+    }
+
+    & #modalQrContato .close-btn {
+      right: 14rem;
+    }
+  }
+
+  .modal-content-projetos {
+    width: 90vw;
+  }
+
+  #skill {
+    margin-left: 2rem;
+  }
+
+  #imgCarrosel {
+    border-radius: 20px;
+    aspect-ratio: 3/1;
+    object-fit: cover;
+    width: 100% !important;
+    height: 46vh;
+  }
+
+  #icon-menu img {
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 10px;
+
+  }
+
+}
+
+@media (min-width:320px)and (max-width: 764px) {
+   #sobreMim {
+    margin-top: 10rem;
+    width: 100%;
+    font-size: 10px;
+    margin-left: 3rem;
+    padding: 1rem;
+
+    & #contato,
+    #curriculo {
+      width: 15rem;
+      margin: 5px;
+      font-size: 8px;
+      padding: 2px;
+    }
+
+    & #modalQrContato .close-btn {
+      right: 1px;
+    }
+  }
+   #imgCarrosel {
+    border-radius: 20px;
+    aspect-ratio: 3/1;
+    object-fit: cover;
+    width: 100% !important;
+    height: 19vh;
+  }
+  #coluna1-menu li {
+    border: 2px solid white;
+    background-color: #212121;
+    border-radius: 10px;
+    margin-bottom: 4rem;
+    display: flex;
+    justify-content: center;
+    width: 10rem;
+    height: auto;
+    padding: 10px;
+    font-size: 8px;
+
+  }
+}
+ @media(min-width:769px){
+   #coluna1-menu li {
+    border: 2px solid white;
+    background-color: #212121;
+    border-radius: 10px;
+    margin-bottom: 4rem;
+    display: flex;
+    justify-content: center;
+    width: 11rem;
+    height: auto;
+    padding: 10px;
+    font-size: 8px;
+
+  }
+   #coluna2-menu {
+    margin: 0 !important;
+  }
+     #imgCarrosel {
+    border-radius: 20px;
+    aspect-ratio: 3/1;
+    object-fit: cover;
+    width: 100% !important;
+    height: 45vh;
+  }
+  #modalQrContato .close-btn {
+      right: 7em;
+    }
+    #botoes .btn {
+  background-color: inherit;
+  border: 2px solid #760504;
+  border-radius: 10px;
+  width: 20vw;
+  color: white;
+  padding: 10px;
+}
+
+  }
